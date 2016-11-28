@@ -34,18 +34,25 @@
   position: relative;
   overflow: auto;
   text-transform: uppercase;
-  width: 70%;
+  /*width: 1000px;*/
+  width: 60%;
   color: #890101;
-  top: 10%;
-  left: 25%;
+  top: 13%;
+  left: 35%;
   /*display: inline-block;*/
+}
+#navigation .nav:first-child {
+  margin-right: 5%;
+}
+#navigation .nav:last-child {
+  margin-left: 5%;
 }
 #navigation .nav {
   position: relative;
-  float: right;
-  width: 18em;
+  float: left;
+  width: 30%;
   text-align: center;
-  margin: 2%;
+  margin-bottom: 5%;
   text-decoration: none;
 
 }
@@ -69,4 +76,73 @@
   left: 50%;
   transform: translate(-50%,0);
   background: #E7E7E7;
+}
+
+#text-container h1 {
+  text-align: center;
+  font-weight: lighter;
+  text-shadow: 1px 1px 1px white;
+  line-height: 2em;
+}
+
+#text-container {
+  position: relative;
+  width: 60%;
+  overflow: auto;
+  top: 10%;
+  left: 35%;
+}
+
+#text-container p {
+  line-height: 1.4em;
+  margin-bottom: 2%;
+}
+
+#text-container hr {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#vicsvills {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+#vicsvills h2 {
+  position: relative;
+  top: 0.3em;
+}
+#vicsvills hr {
+  width: 40%;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+#pictures {
+  position: relative;
+  width: 60%;
+  overflow: auto;
+  top: 10%;
+  left: 35%;
+}
+#pictures img {
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px #333;
+  width: 14.7%;
+  margin-right: 1%;
+  margin-left: 1%;
+  max-width: 100%;
+}
+#pictures img:first-child {
+  margin-right: 1%;
+  margin-left: 0;
+}
+#pictures img:last-child {
+  margin-left: 1%;
+  margin-right: 0;
 }
