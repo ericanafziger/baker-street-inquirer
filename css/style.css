@@ -12,7 +12,9 @@
 }
 #logo {
   position: relative;
-  top: 5%;
+  float: left;
+  width: 30%;
+  top: 6%;
   left: 8%;
 }
 #logo img {
@@ -27,4 +29,44 @@
   z-index: 1;
   left: 4em;
   top: 7.25em;
+}
+#navigation {
+  position: relative;
+  overflow: auto;
+  text-transform: uppercase;
+  width: 70%;
+  color: #890101;
+  top: 10%;
+  left: 25%;
+  /*display: inline-block;*/
+}
+#navigation .nav {
+  position: relative;
+  float: right;
+  width: 18em;
+  text-align: center;
+  margin: 2%;
+  text-decoration: none;
+
+}
+#navigation h3 {
+    padding-bottom: 1.5em;
+    font-size: 1em;
+}
+#navigation h6 {
+  font-weight: lighter;
+}
+#navigation .nav:hover {
+  color: red;
+  cursor: pointer;
+}
+#navigation .nav:hover:after {
+  content: url(../img/ornament.png);
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%,0);
+  background: #E7E7E7;
 }
