@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background: #E7E7E7;
+  height: 600px;
+  background-image: url(../img/top-border.png);
+  background-repeat: repeat-x;
+}
+#logo {
+  position: relative;
+  top: 5%;
+  left: 8%;
+}
+#logo img {
+  display: block;
+}
+#background {
+  position: absolute;
+  z-index: 0;
+}
+#background-text {
+  position: absolute;
+  z-index: 1;
+  left: 4em;
+  top: 7.25em;
+}
