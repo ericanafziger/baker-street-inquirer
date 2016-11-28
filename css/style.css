@@ -55,7 +55,6 @@ body {
   text-align: center;
   margin-bottom: 5%;
   text-decoration: none;
-
 }
 #navigation h3 {
     padding-bottom: 1.5em;
@@ -89,46 +88,39 @@ body {
   overflow: hidden;
   top: 10%;
   left: 35%;
+  margin-bottom: 2%;
 }
 
 #text-container h1 {
   text-align: center;
   font-weight: lighter;
   text-shadow: 1px 1px 1px white;
-  line-height: 2em;
+  line-height: 1em;
+  margin-bottom: .5em;
 }
 
 
 #text-container p {
   line-height: 1.4em;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 #text-container hr {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-#vicsvills {
-  position: relative;
+
+#text-container h2 {
+  /*position: relative;*/
+  /*top: 15%;*/
+  margin-top: -26px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  width: 100%;
-  left: 50%;
-  transform: translate(-50%,0);
+  width: 200px;
+  background-color: #E7E7E7;
 }
-#vicsvills h2 {
-  position: relative;
-  top: 0.3em;
-  margin: 2%;
-}
-#vicsvills hr {
-  width: 36%;
-}
-.float-left {
-  float: left;
-}
-.float-right {
-  float: right;
-}
+
 #pictures {
   position: relative;
   width: 60%;
@@ -232,10 +224,6 @@ a:hover {
   overflow: hidden;
   left: 40%;
 }
-
-#vicsvills h2 {
-  white-space: nowrap;
-}
 #pictures {
   width: 55%;
   left: 40%;
@@ -251,6 +239,71 @@ a:hover {
 
 }
 @media (max-width: 1050px) {
-
-
+  #logo {
+    left: 3%;
+  }
+  #navigation {
+    left: 4%;
+    width: 100%;
+  }
+}
+@media (max-width: 845px) {
+  #pictures {
+    top: 15%;
+  }
+  #footer {
+    top: 15%;
+  }
+}
+@media (max-width: 735px) {
+  #navigation {
+    width: 90%;
+    top: 2%;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid darkgrey;
+  }
+  #navigation .nav {
+    float: left;
+    width: 32%;
+    text-align: center;
+    margin-bottom: 5%;
+    text-decoration: none;
+  }
+  #navigation .nav:first-child {
+    border-top: none;
+    padding-top: 0%;
+    margin-right: 2%;
+  }
+  #navigation .nav:last-child {
+    margin-left: 2%;
+  }
+  #background {
+    display: none;
+  }
+  #background-text {
+    left: 0;
+  }
+  #logo{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0%;
+  }
+  #text-container {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  #pictures {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  #footer {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
 }
