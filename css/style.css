@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: #E7E7E7;
+}
 
 #container {
   background: #E7E7E7;
-  height: 600px;
+  height: 1000px;
   background-image: url(../img/top-border.png);
   background-repeat: repeat-x;
 }
@@ -88,7 +91,7 @@
 #text-container {
   position: relative;
   width: 60%;
-  overflow: auto;
+  overflow: hidden;
   top: 10%;
   left: 35%;
 }
@@ -112,9 +115,10 @@
 #vicsvills h2 {
   position: relative;
   top: 0.3em;
+  margin: 2%;
 }
 #vicsvills hr {
-  width: 40%;
+  width: 36%;
 }
 .float-left {
   float: left;
@@ -125,24 +129,60 @@
 #pictures {
   position: relative;
   width: 60%;
-  overflow: auto;
+  overflow: hidden;
   top: 10%;
   left: 35%;
 }
 #pictures img {
-  display: inline-block;
+  /*display: inline-block;*/
   border-radius: 5px;
   box-shadow: 0px 3px 5px #333;
-  width: 14.7%;
-  margin-right: 1%;
-  margin-left: 1%;
+  /*width: 14.7%;*/
+  /*margin-right: 1%;
+  margin-left: 1%;*/
   max-width: 100%;
 }
-#pictures img:first-child {
+#pictures .person:first-child {
   margin-right: 1%;
   margin-left: 0;
 }
-#pictures img:last-child {
+#pictures .person:last-child {
   margin-left: 1%;
   margin-right: 0;
+}
+.person {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  width: 14.5%;
+  margin-right: 1%;
+  margin-left: 1%;
+    color: #890101;
+}
+.person h3 {
+    padding-bottom: 1.5em;
+    font-size: 1em;
+}
+.person h6 {
+  margin-top: 1em;
+
+  font-weight: lighter;
+}
+#footer {
+  text-align: center;
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+  top: 10%;
+  left: 35%;
+  font-size: 0.8em;
+}
+#footer img {
+  width: 50%;
+  height: 40px;
+  object-fit: cover;
+}
+a {
+  color: #890101;
+ text-decoration: none;
 }
